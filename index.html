@@ -1,88 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ishita | AI Portfolio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-white text-gray-800 font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishita | AI Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="assets/profile.jpg" />
+  </head>
+  <body class="bg-white text-gray-800">
 
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-yellow-300 to-orange-400 py-20 text-center">
-    <img src="assets/profile.jpg" alt="Ishita Profile" class="w-32 h-32 mx-auto rounded-full border-4 border-white shadow-lg">
-    <h1 class="text-4xl font-bold mt-4">Ishita Bahamnia</h1>
-    <p class="mt-2 text-xl font-medium">AI Researcher | ML Engineer | GenAI Strategist</p>
-    <a href="#contact" class="mt-4 inline-block px-6 py-2 bg-white text-yellow-600 rounded-full font-semibold shadow hover:bg-yellow-100">Contact Me</a>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="max-w-4xl mx-auto py-12 px-6">
-    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-    <p class="text-lg">I’m a PhD researcher and AI solution architect working at the intersection of GenAI, multi-agent systems, and real-world deployment. With experience across Microsoft, NITI Aayog, and real estate AI products, I’m building scalable, ethical, and impactful tech.</p>
-    <a href="assets/Ishita_Resume.pdf" class="mt-4 inline-block bg-orange-500 text-white px-4 py-2 rounded shadow hover:bg-orange-600">Download Resume</a>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="bg-gray-50 py-12 px-6">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-semibold mb-6">Featured Projects</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Project Card -->
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md">
-          <img src="assets/project1.png" alt="Project 1" class="rounded mb-4">
-          <h3 class="text-xl font-semibold">GenAI Resume Screener</h3>
-          <p class="text-sm text-gray-700 mt-2">An AI-powered HR system with resume feedback, job suggestions, and n8n backend for automation.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow hover:shadow-md">
-          <img src="assets/project2.png" alt="Project 2" class="rounded mb-4">
-          <h3 class="text-xl font-semibold">Energy Forecasting MAS</h3>
-          <p class="text-sm text-gray-700 mt-2">Multi-Agent System for renewable energy prediction using LSTM, Prophet, and Streamlit dashboard.</p>
-        </div>
-
-        <!-- Add more cards as needed -->
+    <!-- Header Section -->
+    <section class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white py-12 text-center">
+      <div class="max-w-3xl mx-auto px-4">
+        <img src="assets/profile.jpg" alt="Ishita" class="w-28 h-28 mx-auto rounded-full border-4 border-white shadow-lg" />
+        <h1 class="text-4xl font-bold mt-4">Ishita Bahamnia</h1>
+        <p class="text-lg mt-2">AI Researcher | GenAI Engineer | MAS Innovator</p>
+        <a href="#projects" class="inline-block mt-4 px-6 py-2 bg-white text-orange-600 font-semibold rounded-full shadow hover:bg-yellow-200">View Projects</a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="py-12 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-semibold mb-4">Experience</h2>
-    <ul class="space-y-4">
-      <li><strong>Valion – Senior AI Analyst</strong><br>Real Estate AI Projects, XGBoost, GPT-4 Reports</li>
-      <li><strong>Microsoft (AICTE Internship)</strong><br>GenAI system modeling and cloud deployment</li>
-      <li><strong>NITI Aayog</strong><br>AI policy research and implementation</li>
-    </ul>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="py-12 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-gray-700 text-lg leading-relaxed">
+        I'm a PhD researcher and senior AI analyst focused on real-world GenAI solutions, renewable energy forecasting, and LLM integrations. My experience spans Microsoft, NITI Aayog, and cutting-edge AI research, building human-centered AI that scales.
+      </p>
+      <a href="assets/Ishita_Resume.pdf" target="_blank" class="mt-4 inline-block bg-orange-500 text-white px-4 py-2 rounded shadow hover:bg-orange-600">Download Resume</a>
+    </section>
 
-  <!-- Skills -->
-  <section class="bg-gray-100 py-12 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-semibold mb-4">Skills & Tools</h2>
-      <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
-        <span class="bg-white px-4 py-2 rounded shadow">Python</span>
-        <span class="bg-white px-4 py-2 rounded shadow">PyTorch</span>
-        <span class="bg-white px-4 py-2 rounded shadow">n8n</span>
-        <span class="bg-white px-4 py-2 rounded shadow">GCP</span>
-        <span class="bg-white px-4 py-2 rounded shadow">Azure</span>
-        <span class="bg-white px-4 py-2 rounded shadow">RAG</span>
-        <span class="bg-white px-4 py-2 rounded shadow">LLMs</span>
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-100 py-12 px-6">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-semibold mb-8 text-center">Projects</h2>
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <!-- Project Card -->
+          <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/project1.png" alt="Resume Bot" class="rounded mb-3">
+            <h3 class="text-xl font-bold">GenAI Resume Screener</h3>
+            <p class="text-sm text-gray-600 mt-2">AI-powered HR resume feedback and job matcher with n8n integration.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/project2.png" alt="Energy AI" class="rounded mb-3">
+            <h3 class="text-xl font-bold">Renewable Energy Forecasting</h3>
+            <p class="text-sm text-gray-600 mt-2">MAS with LSTM, Prophet, anomaly detection & Streamlit dashboard.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
+            <img src="assets/project3.png" alt="Lead Gen" class="rounded mb-3">
+            <h3 class="text-xl font-bold">Lead Generation AI</h3>
+            <p class="text-sm text-gray-600 mt-2">Automated LinkedIn + CRM AI pipeline built using Zapier and n8n.</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-12 px-6 text-center">
-    <h2 class="text-3xl font-semibold mb-4">Let's Connect</h2>
-    <p class="mb-4">Reach me via email or LinkedIn. I’m open to collaborations, consulting, and speaking engagements.</p>
-    <div class="flex justify-center space-x-4">
-      <a href="mailto:bahamniaishita@gmail.com" class="text-orange-500 hover:underline">Email</a>
-      <a href="https://www.linkedin.com/in/ishitabahamnia" target="_blank" class="text-orange-500 hover:underline">LinkedIn</a>
-      <a href="https://github.com/Ishita95-harvad" target="_blank" class="text-orange-500 hover:underline">GitHub</a>
-    </div>
-  </section>
+    <!-- Experience Section -->
+    <section class="py-12 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6">Experience</h2>
+      <ul class="space-y-6">
+        <li>
+          <strong>🧠 Valion.ai – Senior Research Analyst</strong>
+          <p>Real estate analytics, AI product strategy, GenAI integration, Google Cloud deployment.</p>
+        </li>
+        <li>
+          <strong>🌐 Microsoft – AICTE GenAI Intern</strong>
+          <p>Built GenAI-based energy assistant using Azure + OpenAI stack.</p>
+        </li>
+        <li>
+          <strong>🏛️ NITI Aayog – Policy Research Intern</strong>
+          <p>Explored ML applications in public planning & smart cities.</p>
+        </li>
+      </ul>
+    </section>
 
-  <footer class="text-center text-sm py-6 bg-gray-50">© 2025 Ishita Bahamnia. Powered by GitHub Pages.</footer>
-</body>
+    <!-- Skills Section -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl font-semibold mb-6">Skills</h2>
+        <div class="flex flex-wrap justify-center gap-3 text-sm">
+          <span class="bg-white px-4 py-2 rounded-full shadow">Python</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">PyTorch</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">LLMs</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">RAG</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">n8n</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">Google Cloud</span>
+          <span class="bg-white px-4 py-2 rounded-full shadow">Azure AI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
+      <p class="mb-6">Open to freelance, collaborations, and consulting opportunities.</p>
+      <div class="flex justify-center space-x-6">
+        <a href="mailto:bahamniaishita@gmail.com" class="text-orange-600 font-semibold hover:underline">Email</a>
+        <a href="https://linkedin.com/in/ishitabahamnia" target="_blank" class="text-orange-600 font-semibold hover:underline">LinkedIn</a>
+        <a href="https://github.com/Ishita95-harvad" target="_blank" class="text-orange-600 font-semibold hover:underline">GitHub</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-sm py-6 bg-white border-t border-gray-200">© 2025 Ishita. Built with 💡 and Tailwind CSS.</footer>
+  </body>
 </html>
+

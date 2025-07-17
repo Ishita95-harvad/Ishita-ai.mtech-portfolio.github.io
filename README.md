@@ -1,5 +1,5 @@
 # Ishita95-harvad-Ishita-ai-portfolio.github.io
-**mini gitHub portfolio ishita.ai**
+Powered By
 
 
 [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fishita95-harvad.github.io)](https://ishita95-harvad.github.io)

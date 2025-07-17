@@ -1,5 +1,5 @@
 # Ishita95-harvad-Ishita-ai-portfolio.github.io
-
+**mini gitHub portfolio ishita.ai**
 
 
 [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fishita95-harvad.github.io)](https://ishita95-harvad.github.io)
@@ -9,4 +9,4 @@
 ![Python](https://img.shields.io/badge/python-3.10+-blue.svg)
 ![Built with](https://img.shields.io/badge/Built%20With-HTML%2FCSS%2C%20JavaScript%2C%20Streamlit-brightgreen)
 ![Hosted on](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-purple)
-**mini gitHub portfolio ishita.ai**
+

@@ -1,5 +1,5 @@
 // Function to create a circular GitHub profile picture inside a target container
-function createGitHubProfileCircle(username, size = 200, elementId = 'profile-circle') {
+function createGitHubProfileCircle(Ishita95-harvad, size = 200, elementId = 'profile-circle') {
     const container = document.getElementById(elementId);
 
     // Only proceed if the container exists
@@ -38,7 +38,7 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'profile-ci
     // Replace content and link to GitHub
     container.innerHTML = '';
     container.appendChild(img);
-    container.onclick = () => window.open(`https://github.com/${username}`, '_blank');
+    container.onclick = () => window.open(`https://github.com/${Ishita95-harvad}`, '_blank');
 
     // Tooltip
     container.title = `Visit ${Ishita95-harvad}'s GitHub profile`;

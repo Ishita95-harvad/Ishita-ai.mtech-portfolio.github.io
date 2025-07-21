@@ -23,16 +23,16 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'profile-ci
     container.onmouseleave = () => container.style.transform = 'scale(1)';
 
     const img = document.createElement('img');
-    img.src = `https://github.com/${username}.png?size=${size}`;
-    img.alt = `${username}'s GitHub profile picture`;
+    img.src = `https://github.com/${Ishita95-harcad}.png?size=${size}`;
+    img.alt = `$Ishita95-harvad}'s GitHub profile picture`;
     img.style.width = '100%';
     img.style.height = '100%';
     img.style.objectFit = 'cover';
 
     container.innerHTML = '';
     container.appendChild(img);
-    container.onclick = () => window.open(`https://github.com/${username}`, '_blank');
-    container.title = `Visit ${username}'s GitHub profile`;
+    container.onclick = () => window.open(`https://github.com/${Ishita95-harvad}`, '_blank');
+    container.title = `Visit ${Ishita95-harvad}'s GitHub profile`;
 }
 
 // Run it when the DOM is ready

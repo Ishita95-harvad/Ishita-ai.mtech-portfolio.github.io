@@ -1,12 +1,11 @@
 // Function to create a circular GitHub profile picture inside a target container
 function createGitHubProfileCircle(username, size = 200, elementId = 'profile-circle') {
-    let container = document.getElementById(elementId);
+    const container = document.getElementById(elementId);
 
-    // Create container if it doesn't exist
+    // Only proceed if the container exists
     if (!container) {
-        container = document.createElement('div');
-        container.id = elementId;
-        document.body.appendChild(container);
+        console.error(`Element with id "${elementId}" not found.`);
+        return;
     }
 
     // Apply circular frame styles
@@ -20,6 +19,7 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'profile-ci
         transition: 'transform 0.3s ease',
         cursor: 'pointer',
         margin: 'auto',
+        padding: '0'
     });
 
     // Hover animation
@@ -28,11 +28,12 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'profile-ci
 
     // Create profile image
     const img = document.createElement('img');
-    img.src = `https://github.com/${username}.png?size=${size}`;
-    img.alt = `${username}'s GitHub profile picture`;
+    img.src = `https://github.com/${Ishita95-harvad}.png?size=${size}`;
+    img.alt = `${Ishita95-harvad}'s GitHub profile picture`;
     img.style.width = '100%';
     img.style.height = '100%';
     img.style.objectFit = 'cover';
+    img.style.display = 'block';
 
     // Replace content and link to GitHub
     container.innerHTML = '';
@@ -40,11 +41,12 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'profile-ci
     container.onclick = () => window.open(`https://github.com/${username}`, '_blank');
 
     // Tooltip
-    container.title = `Visit ${username}'s GitHub profile`;
+    container.title = `Visit ${Ishita95-harvad}'s GitHub profile`;
 }
 
-// ✅ Example usage
-// Replace 'Ishita95-harvad' with your GitHub username
+// Run when the DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     createGitHubProfileCircle('Ishita95-harvad', 200, 'profile-circle');
 });
+
+    

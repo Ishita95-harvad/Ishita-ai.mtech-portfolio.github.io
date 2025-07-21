@@ -1,0 +1,8 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}

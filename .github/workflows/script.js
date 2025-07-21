@@ -24,7 +24,7 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'profile-ci
 
     const img = document.createElement('img');
     img.src = `https://github.com/${Ishita95-harcad}.png?size=${size}`;
-    img.alt = `$Ishita95-harvad}'s GitHub profile picture`;
+    img.alt = `${Ishita95-harvad}'s GitHub profile picture`;
     img.style.width = '100%';
     img.style.height = '100%';
     img.style.objectFit = 'cover';

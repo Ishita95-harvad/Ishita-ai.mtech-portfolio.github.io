@@ -10,3 +10,11 @@ Powered By
 ![Built with](https://img.shields.io/badge/Built%20With-HTML%2FCSS%2C%20JavaScript%2C%20Streamlit-brightgreen)
 ![Hosted on](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-purple)
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+📁 assets/
+
+ -|── style.css/
+  
+ -└── script.js/
+  
+ -└──📄 index.html/

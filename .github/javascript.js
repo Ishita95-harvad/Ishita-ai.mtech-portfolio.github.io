@@ -26,7 +26,8 @@ function createGitHubProfileCircle(Ishita95-harvad, size = 200, elementId = 'git
     container.addEventListener('mouseleave', () => {
         container.style.transform = 'scale(1)';
     });
-
+<!-- Add this where you want the circular GitHub profile picture -->
+<div id="profile-circle"></div>
     // Create the image element
     const img = document.createElement('img');
     img.src = `https://github.com/${Ishita95-harvad}.png?size=${size}`;

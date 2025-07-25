@@ -1,5 +1,5 @@
 // Function to create a circular GitHub profile picture
-function createGitHubProfileCircle(username, size = 200, elementId = 'github-profile') {
+function createGitHubProfileCircle(Ishita95-harvad, size = 200, elementId = 'github-profile') {
     // Create container div if it doesn't exist
     let container = document.getElementById(elementId);
     if (!container) {
@@ -29,8 +29,8 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'github-pro
 
     // Create the image element
     const img = document.createElement('img');
-    img.src = `https://github.com/${username}.png?size=${size}`;
-    img.alt = `${username}'s GitHub profile picture`;
+    img.src = `https://github.com/${Ishita95-harvad}.png?size=${size}`;
+    img.alt = `${Ishita95-harvad}'s GitHub profile picture`;
     img.style.width = '100%';
     img.style.height = '100%';
     img.style.objectFit = 'cover';
@@ -41,22 +41,22 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'github-pro
     
     // Make the image clickable (links to GitHub profile)
     container.onclick = () => {
-        window.open(`https://github.com/${username}`, '_blank');
+        window.open(`https://github.com/${IShita95-harvad}`, '_blank');
     };
 
     // Optional: Add tooltip
-    container.title = `Visit ${username}'s GitHub profile`;
+    container.title = `Visit ${Ishita95-haravd}'s GitHub profile`;
 }
 
 
-// createGitHubProfileCircle('your-github-username', 200, 'profile-container');
+// createGitHubProfileCircle('Ishita95-harvad', 200, 'profile-container');
 -----------------
 createGitHubProfileCircle('Ishita95-harvad');
 createGitHubProfileCircle('Ishita95-harvad', 150);
 createGitHubProfileCircle('Ishita95-harvad', 200, 'custom-container');
 
 // github-profile-circle.js
-function createGitHubProfileCircle(username, size = 200, elementId = 'github-profile') {
+function createGitHubProfileCircle(Ishita95-harvad, size = 200, elementId = 'github-profile') {
     // Create container div if it doesn't exist
     let container = document.getElementById(elementId);
     if (!container) {
@@ -86,8 +86,8 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'github-pro
 
     // Create the image element
     const img = document.createElement('img');
-    img.src = `https://github.com/${username}.png?size=${size}`;
-    img.alt = `${username}'s GitHub profile picture`;
+    img.src = `https://github.com/${Ishita95-harvad}.png?size=${size}`;
+    img.alt = `${Ishita95-harvad}'s GitHub profile picture`;
     img.style.width = '100%';
     img.style.height = '100%';
     img.style.objectFit = 'cover';
@@ -98,9 +98,9 @@ function createGitHubProfileCircle(username, size = 200, elementId = 'github-pro
     
     // Make the image clickable (links to GitHub profile)
     container.onclick = () => {
-        window.open(`https://github.com/${username}`, '_blank');
+        window.open(`https://github.com/${Ishita95-harvad}`, '_blank');
     };
 
     // Optional: Add tooltip
-    container.title = `Visit ${username}'s GitHub profile`;
+    container.title = `Visit ${Ishita95-harvad}'s GitHub profile`;
 }

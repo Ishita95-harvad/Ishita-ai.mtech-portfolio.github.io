@@ -39,8 +39,7 @@ function createGitHubProfileCircle(Ishita95-harvad, size = 200, elementId = 'git
     container.innerHTML = '';
     container.appendChild(img);
 
-    <!-- Add this where you want the circular GitHub profile picture -->
-<div id="profile-circle"></div>
+
     // Make the image clickable (links to GitHub profile)
     container.onclick = () => {
         window.open(`https://github.com/${IShita95-harvad}`, '_blank');
@@ -51,7 +50,8 @@ function createGitHubProfileCircle(Ishita95-harvad, size = 200, elementId = 'git
 }
 
 
-// createGitHubProfileCircle('Ishita95-harvad', 200, 'profile-container');
+// create GitHub ProfileCircle('Ishita95-harvad', 200, 'profile-container');    <!-- Add this where you want the circular GitHub profile picture -->
+<div id="profile-circle"></div>
 -----------------
 createGitHubProfileCircle('Ishita95-harvad');
 createGitHubProfileCircle('Ishita95-harvad', 150);

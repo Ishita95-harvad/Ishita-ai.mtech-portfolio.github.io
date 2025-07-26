@@ -1,0 +1,13 @@
+/Ishita95-harvad-Ishita-ai-portfolio.github.io
+│
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   └── images/
+│       └── profile.jpg
+└── .github/
+    └── workflows/
+        └── static.yml (if using GitHub Actions for custom workflows)

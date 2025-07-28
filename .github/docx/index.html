@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <div id="github-profile"></div>
-  <div id="custom-container"></div> \\Custom ID
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ishita | AI Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="icon" href="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/b0/0d/f7/b00df7e2-8671-45ed-850a-415a0cae5984/5d1569ac-5f53-4528-810b-e09aa154b3d3/45db099d-5b01-420b-885b-01c09a079f03?sv=2025-01-05&st=2025-07-26T14%3A27%3A08Z&se=2025-07-26T15%3A27%3A08Z&sr=b&sp=rade&sig=qcC7egYQDYgsMKk6IXdivBThCIokUbLdzWtDAPCO8tk%3D" />
   <meta name="description" content="Portfolio of Ishita Bahamnia - AI Researcher & GenAI Engineer">
   <meta property="og:title" content="Ishita | AI Portfolio" />
@@ -17,23 +15,132 @@
     html {
       scroll-behavior: smooth;
     }
+    
+    /* GitHub Profile Circle Styles */
+    #github-profile-circle {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 3px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+      position: relative;
+      margin: 0 auto;
+    }
+    
+    #github-profile-circle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      border-color: #6e5494;
+    }
+    
+    .ripple-effect {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.7);
+      transform: scale(0);
+      animation: ripple 0.6s linear;
+      width: 100px;
+      height: 100px;
+      pointer-events: none;
+    }
+    
+    @keyframes ripple {
+      to {
+        transform: scale(2.5);
+        opacity: 0;
+      }
+    }
+    
+    .profile-tooltip {
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    #github-profile-circle:hover .profile-tooltip {
+      opacity: 1;
+    }
+    
+    /* Project title with icon */
+    .project-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 0.5rem;
+    }
+    
+    .project-icon {
+      color: #f97316;
+    }
+    
+    /* Dark Mode Styles */
+    body.dark-mode {
+      background: #121212;
+      color: #fff;
+    }
+    
+    body.dark-mode .bg-white {
+      background-color: #1e1e1e !important;
+      color: #fff;
+    }
+    
+    body.dark-mode .text-gray-800 {
+      color: #e0e0e0 !important;
+    }
+    
+    body.dark-mode .text-gray-700 {
+      color: #b0b0b0 !important;
+    }
+    
+    body.dark-mode .bg-gray-100 {
+      background-color: #252525 !important;
+    }
+    
+    body.dark-mode #github-profile-circle {
+      border-color: #fff;
+    }
+    
+    body.dark-mode .border-gray-200 {
+      border-color: #444 !important;
+    }
   </style>
 </head>
 <body class="bg-white text-gray-800">
   <!-- Header Section -->
   <section class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white py-12 text-center">
     <div class="max-w-3xl mx-auto px-4">
-      <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/b0/0d/f7/b00df7e2-8671-45ed-850a-415a0cae5984/5d1569ac-5f53-4528-810b-e09aa154b3d3/45db099d-5b01-420b-885b-01c09a079f03?sv=2025-01-05&st=2025-07-26T14%3A27%3A08Z&se=2025-07-26T15%3A27%3A08Z&sr=b&sp=rade&sig=qcC7egYQDYgsMKk6IXdivBThCIokUbLdzWtDAPCO8tk%3D" alt="Ishita Bahamnia" class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg" />
+      <!-- GitHub Profile Circle -->
+      <div id="github-profile-circle">
+        <div class="profile-tooltip">Visit my GitHub</div>
+      </div>
+      
       <h1 class="text-3xl font-bold mt-4">Ishita Bahamnia</h1>
       <p class="text-lg mt-1">AI Researcher | GenAI Engineer | MAS Innovator</p>
       <p class="text-sm mt-2">Building human-centered AI solutions that scale</p>
-      <a href="#projects" class="inline-block mt-4 px-6 py-2 bg-white text-orange-600 font-semibold rounded-full shadow hover:bg-yellow-200 transition">
-        View Projects
-      </a>
+      <div class="flex justify-center gap-4 mt-4">
+        <a href="#projects" class="px-6 py-2 bg-white text-orange-600 font-semibold rounded-full shadow hover:bg-yellow-200 transition">
+          View Projects
+        </a>
+        <button id="theme-toggle" class="px-4 py-2 bg-white text-orange-600 font-semibold rounded-full shadow hover:bg-yellow-200 transition">
+          🌓 Toggle Theme
+        </button>
+      </div>
     </div>
   </section>
 
-  <!-- Rest of your HTML content -->
   <!-- About Section -->
   <section id="about" class="py-12 px-6 max-w-4xl mx-auto">
     <h2 class="text-3xl font-semibold mb-4">About Me</h2>
@@ -49,8 +156,11 @@
       <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         <!-- Project 1 -->
         <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center">
-          <img src="assets/project1.png" alt="Career Campus" class="rounded mb-3">
-          <h3 class="text-xl font-bold text-center">Career Campus - Resume Screener and Recommendations</h3>
+          <img src="assets/project1.png" alt="Career Campus" class="rounded mb-3 w-full h-48 object-cover">
+          <div class="project-title">
+            <i class="fas fa-file-alt project-icon"></i>
+            <h3 class="text-xl font-bold">Career Campus</h3>
+          </div>
           <p class="text-sm text-gray-600 mt-2 text-center">AI-powered HR resume feedback and job matcher with Google Firebase App integration.</p>
           <div class="mt-4 space-y-2 flex flex-col items-center">
             <a href="assets/Ishita_Resume.pdf" target="_blank" class="bg-orange-500 text-white px-4 py-2 rounded shadow hover:bg-orange-600">Download Resume</a>
@@ -60,33 +170,45 @@
 
         <!-- Project 2 -->
         <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center">
-          <img src="assets/project2.png" alt="Renewable Forecasting and Energy" class="rounded mb-3">
-          <h3 class="text-xl font-bold text-center">Renewable Forecasting and Energy</h3>
+          <img src="assets/project2.png" alt="Renewable Forecasting" class="rounded mb-3 w-full h-48 object-cover">
+          <div class="project-title">
+            <i class="fas fa-bolt project-icon"></i>
+            <h3 class="text-xl font-bold">Renewable Forecasting</h3>
+          </div>
           <p class="text-sm text-gray-600 mt-2 text-center">MAS with LSTM, Prophet, anomaly detection & Streamlit dashboard.</p>
           <a href="https://github.com/Ishita95-harvad/renewable-forecasting" target="_blank" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded shadow hover:bg-yellow-600">View Project</a>
         </div>
 
         <!-- Project 3 -->
         <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center">
-          <img src="assets/project3.png" alt="Google Gemini 3n Challenge - Legal Jet" class="rounded mb-3">
-          <h3 class="text-xl font-bold text-center">Google Gemini 3n Challenge - Legal Jet</h3>
-          <p class="text-sm text-gray-600 mt-2 text-center">Automated legal document analysis and recommendation system using Google Gemini.</p>
+          <img src="assets/project3.png" alt="Legal Jet" class="rounded mb-3 w-full h-48 object-cover">
+          <div class="project-title">
+            <i class="fas fa-gavel project-icon"></i>
+            <h3 class="text-xl font-bold">Legal Jet</h3>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 text-center">Automated legal document analysis using Google Gemini.</p>
           <a href="https://github.com/Ishita95-harvad/legal-jet" target="_blank" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded shadow hover:bg-yellow-600">View Project</a>
         </div>
 
         <!-- Project 4 -->
         <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center">
-          <img src="assets/project4.png" alt="AI Powered Interview Practice" class="rounded mb-3">
-          <h3 class="text-xl font-bold text-center">AI Powered Interview Practice</h3>
-          <p class="text-sm text-gray-600 mt-2 text-center">AI-driven platform to practice and improve interview skills using NLP.</p>
+          <img src="assets/project4.png" alt="Interview Practice" class="rounded mb-3 w-full h-48 object-cover">
+          <div class="project-title">
+            <i class="fas fa-comments project-icon"></i>
+            <h3 class="text-xl font-bold">Interview Practice</h3>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 text-center">AI-driven platform to practice interview skills using NLP.</p>
           <a href="https://github.com/Ishita95-harvad/ai-interview-practice" target="_blank" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded shadow hover:bg-yellow-600">View Project</a>
         </div>
 
         <!-- Project 5 -->
         <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col items-center">
-          <img src="assets/project5.png" alt="Scholarship Assistance LLM Model" class="rounded mb-3">
-          <h3 class="text-xl font-bold text-center">Scholarship Assistance LLM Model</h3>
-          <p class="text-sm text-gray-600 mt-2 text-center">LLM model designed to assist students in finding and applying for scholarships.</p>
+          <img src="assets/project5.png" alt="Scholarship Assistance" class="rounded mb-3 w-full h-48 object-cover">
+          <div class="project-title">
+            <i class="fas fa-graduation-cap project-icon"></i>
+            <h3 class="text-xl font-bold">Scholarship Assistance</h3>
+          </div>
+          <p class="text-sm text-gray-600 mt-2 text-center">LLM model for finding and applying for scholarships.</p>
           <a href="https://github.com/Ishita95-harvad/scholarship-assistance" target="_blank" class="mt-4 bg-yellow-500 text-white px-4 py-2 rounded shadow hover:bg-yellow-600">View Project</a>
         </div>
       </div>
@@ -143,5 +265,68 @@
   <footer class="text-center text-sm py-6 bg-white border-t border-gray-200">
     © 2025 Ishita. Built with 💡 and Tailwind CSS.
   </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // GitHub Profile Circle with Effects
+    function createGitHubProfileCircle(username, size = 150) {
+      const container = document.getElementById('github-profile-circle');
+      const img = document.createElement('img');
+      
+      img.src = `https://github.com/${username}.png?size=${size}`;
+      img.alt = `${username}'s GitHub profile`;
+      img.style.width = '100%';
+      img.style.height = '100%';
+      img.style.objectFit = 'cover';
+      
+      container.innerHTML = '';
+      container.appendChild(img);
+      
+      // Ripple Effect on Click
+      container.addEventListener('click', (e) => {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple-effect');
+        ripple.style.left = `${e.clientX - container.getBoundingClientRect().left}px`;
+        ripple.style.top = `${e.clientY - container.getBoundingClientRect().top}px`;
+        container.appendChild(ripple);
+        
+        setTimeout(() => ripple.remove(), 600);
+        setTimeout(() => window.open(`https://github.com/${username}`, '_blank'), 300);
+      });
+
+      // Tilt Effect
+      container.addEventListener('mousemove', (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const angleX = (y - centerY) / 10;
+        const angleY = (centerX - x) / 10;
+        container.style.transform = `perspective(500px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.1)`;
+      });
+
+      container.addEventListener('mouseleave', () => {
+        container.style.transform = 'scale(1)';
+      });
+    }
+
+    // Theme Toggle
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      localStorage.setItem('theme', document.body.classList.contains('dark-mode') ? 'dark' : 'light');
+    });
+
+    // Initialize
+    if (localStorage.getItem('theme') === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+
+    // Create the profile circle
+    createGitHubProfileCircle('Ishita95-harvad');
+  </script>
 </body>
 </html>
+
+
+

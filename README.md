@@ -2,7 +2,7 @@
 Powered By
 
 [![pages-build-deployment](https://github.com/Ishita95-harvad/Ishita-ai.mtech-portfolio.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Ishita95-harvad/Ishita-ai.mtech-portfolio.github.io/actions/workflows/pages/pages-build-deployment)
-[![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fishita95-harvad.github.io)](https://ishita95-harvad.github.io)
+[![Website](https://img.shields.io/website?down_color=red&down_message=online&up_color=green&up_message=online&url=https%3A%2F%2Fishita95-harvad.github.io)](https://ishita95-harvad.github.io)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ishita95-harvad/Ishita95-harvad-Ishita-ai-portfolio.github.io)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Ishita95-harvad/Ishita95-harvad-Ishita-ai-portfolio.github.io)
 ![License: Apache](https://img.shields.io/github/license/Ishita95-harvad/Ishita95-harvad-Ishita-ai-portfolio.github.io)

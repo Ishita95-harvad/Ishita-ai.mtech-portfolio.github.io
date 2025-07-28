@@ -1,7 +1,7 @@
 # Ishita95-harvad-Ishita-ai-portfolio.github.io
 Powered By
 
-
+[![Deploy static content to Pages](https://github.com/Ishita95-harvad/Ishita95-harvad-Ishita-ai.mtech-portfolio.github.io/actions/workflows/static.yml/badge.svg?branch=main&event=deployment_status)](https://github.com/Ishita95-harvad/Ishita95-harvad-Ishita-ai.mtech-portfolio.github.io/actions/workflows/static.yml)
 [![Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Fishita95-harvad.github.io)](https://ishita95-harvad.github.io)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Ishita95-harvad/Ishita95-harvad-Ishita-ai-portfolio.github.io)
 ![GitHub last commit](https://img.shields.io/github/last-commit/Ishita95-harvad/Ishita95-harvad-Ishita-ai-portfolio.github.io)

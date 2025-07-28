@@ -1,5 +1,64 @@
-// Function to create a circular GitHub profile picture
-function createGitHubProfileCircle(Ishita95-harvad, size = 200, elementId = 'github-profile') {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Circle</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container where the GitHub profile picture will appear -->
+    <div id="github-profile"></div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="github-profile-circle.js"></script>
+    
+    <!-- Call the function with your GitHub username -->
+    <script>
+        createGitHubProfileCircle('<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Circle</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container where the GitHub profile picture will appear -->
+    <div id="github-profile"></div>
+
+    <!-- Link to your JavaScript file -->
+    <script src="github-profile-circle.js"></script>
+    
+    <!-- Call the function with your GitHub username -->
+    <script>
+        createGitHubProfileCircle('Ishita95-harvad');
+    </script>
+</body>
+</html>');
+    </script>
+</body>
+</html>
+        // Function to create a circular GitHub profile picture
+function createGitHubProfileCircle(Ishita95-harvad, size = 200, elementId = 'Ishita95-harvad') {
     // Create container div if it doesn't exist
     let container = document.getElementById(elementId);
     if (!container) {

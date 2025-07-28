@@ -1,4 +1,4 @@
-# Ishita95-harvad-Ishita-ai-portfolio.github.io(https://github.com/Ishita95-harvad/Ishita-ai.mtech-portfolio.github.io)
+# [Ishita95-harvad-Ishita-ai-portfolio.github.io](https://github.com/Ishita95-harvad/Ishita-ai.mtech-portfolio.github.io)
 Powered By
 
 [![pages-build-deployment](https://github.com/Ishita95-harvad/Ishita-ai.mtech-portfolio.github.io/actions/workflows/pages/pages-build-deployment/badge.svg?branch=main)](https://github.com/Ishita95-harvad/Ishita-ai.mtech-portfolio.github.io/actions/workflows/pages/pages-build-deployment)
